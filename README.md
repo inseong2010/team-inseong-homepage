@@ -1,1 +1,1 @@
-# team-skeleton2010-homepage - copy
+# team-skeleton2010-homepage
