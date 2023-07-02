@@ -1,5 +1,5 @@
 {
-  "name": "team-skeleton2010-homepage",
+  "name": "team-inseong-homepage",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -69,12 +69,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skeleton2010/team-skeleton2010-homepage.git"
+    "url": "git+https://github.com/skeleton2010/team-inseong-homepage.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/skeleton2010/team-skeleton2010-homepage/issues"
+    "url": "https://github.com/skeleton2010/team-inseong-homepage/issues"
   },
-  "homepage": "https://github.com/skeleton2010/team-skeleton2010-homepage#readme"
+  "homepage": "https://github.com/skeleton2010/team-inseong-homepage#readme"
 }
