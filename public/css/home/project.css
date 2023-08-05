@@ -1,0 +1,22 @@
+a {
+    color: #ffffff;
+    text-align: center;
+}
+
+div {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid gray;
+}
+
+#sec {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    padding: 0 280px 0 290px;
+}
