@@ -3,7 +3,7 @@
 const express = require("express");
 const router = express.Router();
 
-const ctrl = require("./home.ctrl")
+const ctrl = require("./home.ctrl");
 
 router.get('/', ctrl.output.hello);
 router.get('/privacy', ctrl.output.privacy);
@@ -13,5 +13,7 @@ router.get('/project/apocalypse', ctrl.output.apocalypse);
 router.get('/project/teleporter', ctrl.output.teleporter);
 router.get('/project/status', ctrl.output.status);
 router.get('/resoure/apocalypse', ctrl.output.apocalypseResoure);
+
+router.post('/bug', ctrl.proccess.bug);
 
 module.exports = router;
