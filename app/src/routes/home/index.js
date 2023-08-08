@@ -13,6 +13,7 @@ router.get('/project/apocalypse', ctrl.output.apocalypse);
 router.get('/project/teleporter', ctrl.output.teleporter);
 router.get('/project/status', ctrl.output.status);
 router.get('/resoure/apocalypse', ctrl.output.apocalypseResoure);
+router.get('/test', ctrl.output.test);
 
 router.post('/bug', ctrl.proccess.bug);
 

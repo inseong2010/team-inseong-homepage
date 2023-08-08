@@ -1,4 +1,7 @@
 const nodemailer = require('nodemailer');
+const fs = require("fs");
+
+
 // 메일발송 객체
 const mailSender = {
   // 메일발송 함수
