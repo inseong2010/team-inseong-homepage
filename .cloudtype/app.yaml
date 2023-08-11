@@ -2,5 +2,5 @@ name: node
 app: node@16
 options:
   install: npm ci --production
-  ports: 3000/http
+  ports: 3000
   start: npm start
