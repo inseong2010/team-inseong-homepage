@@ -52,17 +52,17 @@ const output = {
 
 const proccess = {
     bug: (req, res) => {
-        // const email = req.body.email,
-        //     desc = req.body.desc;
+        const email = req.body.email,
+            desc = req.body.desc;
 
-        // let emailParam = {
-        //     toEmail: email,
-        //     desc: desc               // 메일 내용
-        // };
+        let emailParam = {
+            toEmail: email,
+            desc: desc               // 메일 내용
+        };
 
-        // mailer.sendGmail(emailParam);
+        mailer.sendGmail(emailParam);
 
-        // res.status(200).send("성공");
+        res.status(200).send("성공");
     },
 };
 

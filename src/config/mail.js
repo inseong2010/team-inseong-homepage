@@ -1,5 +1,4 @@
 const nodemailer = require('nodemailer');
-const fs = require("fs");
 
 
 // 메일발송 객체
@@ -13,13 +12,13 @@ const mailSender = {
       secure: false,  
       requireTLS: true ,
       auth: {
-        user: `${MAIL_USER}`,  // 보내는 메일의 주소
-        pass: `${MAIL_PSWORD}`   // 보내는 메일의 비밀번호
+        user: process.env.MAIL_USER,  // 보내는 메일의 주소
+        pass: process.env.MAIL_PSWORD   // 보내는 메일의 비밀번호
       }
     });
     // 메일 옵션
     var mailOptions = {
-      from: `${MAIL_ADDRESS}`, // 보내는 메일의 주소
+      from: process.env.MAIL_ADDRESS, // 보내는 메일의 주소
       to: param.toEmail, // 수신할 이메일
       subject: "test", // 메일 제목
       text: param.desc // 메일 내용

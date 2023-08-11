@@ -2,6 +2,8 @@
 
 const express = require('express');
 const app = express();
+const dotenv = require('dotenv');
+dotenv.config();
 
 const home = require("./src/routes/home/index");
 
