@@ -4,3 +4,14 @@ options:
   install: npm ci --production
   ports: 3000
   start: npm start
+env:
+    - name: MAiL_ADDRESS
+      value: support@teaminseong.kro.kr
+    - name: MAIL_PSWORD
+      value: rvtmsujymfscgfru
+    - name: MAIL_USER
+      value: inseong747@gmail.com
+context:
+  git:
+    url: https://github.com/skeleton2010/team-inseong-homepage.git
+    branch: master
