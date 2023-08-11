@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
    
 FROM node:16-buster
-WORKDIR /app
+WORKDIR /
 COPY package*.json ./
 RUN npm i
 
