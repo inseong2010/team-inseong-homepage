@@ -3,7 +3,7 @@
 FROM node:16-buster
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm i
 
 USER node
 
