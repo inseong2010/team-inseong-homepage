@@ -1,4 +1,4 @@
-name: node
+name: team-skeleton2010-homepage
 app: node@16
 options:
   install: npm ci --production
@@ -7,6 +7,8 @@ options:
       value: rvtmsujymfscgfru
     - name: MAIL_USER
       value: inseong747@gmail.com
+    - name: PORT
+      value: 3000
   ports: 3000
   start: npm start
 context:
