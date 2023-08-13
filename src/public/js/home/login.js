@@ -7,8 +7,8 @@ const email = document.querySelector("#email"),
 loginBtn.addEventListener("click", login);
 
 function login() {
-    // if (!email.value) return alert("Please enter your email");
-    // if (!passwd.value) return alert("Please enter your password");
+    if (!email.value) return alert("Please enter your email.");
+    if (!passwd.value) return alert("Please enter your password.");
      
     const req = {
         email: email.value,

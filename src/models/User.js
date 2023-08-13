@@ -8,9 +8,9 @@ class User {
         this.body = body;
     }
 
-    login() {
+    async login() {
         const body = this.body;
-        const { email, passwd } = UserStorage.getUserInfo(body.email);
+        const { email, passwd } = await UserStorage.getUserInfo(body.email);
 
         if (email) {
             if (email === body.email && passwd === body.passwd) {
@@ -19,6 +19,11 @@ class User {
             return { success: false, msg: "ID or password is incorrect." };
         }
         return { success: false, msg: "ID does not exist." };
+    }
+
+    register() {
+        const response = UserStorage.save(this.body);
+        return response;
     }
 }
 

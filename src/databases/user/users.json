@@ -1,0 +1,6 @@
+{
+    "email": ["test", "bug", "user"],
+    "passwd": ["test", "bug", "user!"],
+    "lastName": ["", "", ""],
+    "secondName": ["test", "버그", "유저2"]
+}

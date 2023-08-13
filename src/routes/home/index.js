@@ -21,8 +21,8 @@ router.get('/register', ctrl.output.register);
 //post
 router.post('/bug', ctrl.proccess.bug);
 router.post('/login', ctrl.proccess.login);
-router.post('/forget/password', ctrl.output.forgetPasswd);
-router.post('/register', ctrl.output.register);
+router.post('/forget/password', ctrl.proccess.forgetPasswd);
+router.post('/register', ctrl.proccess.register);
 
 
 module.exports = router;
