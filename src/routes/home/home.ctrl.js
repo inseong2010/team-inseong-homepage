@@ -1,7 +1,7 @@
 "use strict";
 
 const mailer = require("../../config/mail");
-const fs = require("fs");
+const User = require("../../models/User");
 
 const output = {
     hello: (req, res) => {
@@ -28,25 +28,14 @@ const output = {
     apocalypseResoure: (req, res) => {
         res.download('resoure/home/Apocalypse.zip');
     },
-    test: (req, res) => {
-        fs.readFile(`./src/config/application.properties`, 'utf8', function(err, description) {
-            if (err) throw err;
-            const html = `
-            <!DOCTYPE html>
-            <html lang="ko">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Apocalypse</title>
-                <link rel="stylesheet" href="/css/home/html.css">
-                <link rel="stylesheet" href="/css/home/project.css">
-            </head>
-            <body>
-                <h1>${description}</h1>
-            </body>
-            </html>`;
-            res.send(html);
-        });
+    login: (req, res) => {
+        res.render('home/login');
+    },
+    forgetPasswd: (req, res) => {
+
+    },
+    register: (req, res) => {
+
     },
 };
 
@@ -63,6 +52,17 @@ const proccess = {
         mailer.sendGmail(emailParam);
 
         res.status(200).send("성공");
+    },
+    login: (req, res) => {
+        const user = new User(req.body);
+        const response = user.login();
+        return res.json(response);
+    },
+    forgetPasswd: (req, res) => {
+
+    },
+    register: (req, res) => {
+        
     },
 };
 

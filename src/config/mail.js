@@ -1,6 +1,5 @@
 const nodemailer = require('nodemailer');
 
-
 // 메일발송 객체
 const mailSender = {
   // 메일발송 함수
